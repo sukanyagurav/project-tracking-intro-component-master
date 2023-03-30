@@ -23,10 +23,26 @@ module.exports = {
       letterSpacing: {
         widest: '0.3em',
 
+      },
+      keyframes:{
+        'grow':{
+          '0%':{
+            opacity: 0,
+            transform: 'scale(0)'
+          },
+          '100%':{
+            opacity: 1,
+            transform: 'scale(1)'
+          }
+        }
+      },
+      animation:{
+        grow: 'grow 2s ease-in',
       }
     },
 
   },
   plugins: [],
+  
 }
 
