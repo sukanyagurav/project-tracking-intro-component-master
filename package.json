@@ -1,0 +1,15 @@
+{
+  "name": "project-tracking-intro-component-master",
+  "version": "1.0.0",
+  "description": "Frontend Mentor | Project tracking intro component",
+  "main": "index.html",
+  "scripts": {
+   "build":"tailwindcss -i ./input.css -o ./css/style.css",
+   "watch":"tailwindcss -i ./input.css -o ./css/style.css --watch"
+  },
+  "author": "SG",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}

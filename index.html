@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="overflow-x-hidden bg-gray-50">
+  <div id="overlay" class="z-1" aria-hidden="true"></div>
+<!-- nav container -->
+ <nav class="relative container  max-w-6xl mx-auto p-6 py-12 uppercase tracking-wider  z-30">
+    <div class="flex items-center justify-between">
+      <!-- logo -->
+        <img src="images/logo.svg" alt="logo">
+      <!-- navigation and menu -->
+      <div class="hidden md:flex px-7 text-lg items-center space-x-20 font-bold">
+        <div class="font-sans font-bold flex md:space-x-10">
+            <div class="group">
+              <a href="#" class="group-hover:text-red"> Product</a>
+              <div class="link-hover" ></div>
+            </div>
+            <div class="group">
+              <a href="#" class="group-hover:text-red" > Features</a>
+              <div class="link-hover "></div>
+            </div>
+            <div class="group">
+              <a href="#" class="group-hover:text-red"> Pricing</a>
+              <div class="link-hover">  </div>
+            </div>
+        </div>
+        <!-- login button -->
+        <div class="group">
+          <a href="#" class="text-grayishBlue group-hover:text-red" >Login</a>
+          <div class="link-hover"></div>
+        </div>
+      </div>
+      <!-- menu button -->
+      <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+          type="button" aria-label="menu button"
+        >
+          <span class="hamburger-top" aria-hidden="true"></span>
+          <span class="hamburger-middle" aria-hidden="true"></span>
+          <span class="hamburger-bottom" aria-hidden="true"></span>
+        </button>
+    </div>
+<!-- mobile view -->
+    <div id="menu" class="absolute hidden p-6 py-10 mx-auto rounded-lg left-6 right-6 top-[7rem] z-100 md:hidden font-bold bg-white duration-300 transition-all">
+      <div
+          class="flex flex-col items-center justify-center w-full space-y-6 rounded-sm md:hidden"
+        >
+      <div class="group">
+        <a href="#" class="group-hover:text-red"> Product</a>
+        <div class="link-hover" ></div>
+      </div>
+      <div class="group">
+        <a href="#" class="group-hover:text-red" > Features</a>
+        <div class="link-hover"></div>
+      </div>
+      <div class="group">
+        <a href="#" class="group-hover:text-red"> Pricing</a>
+        <div class="link-hover">  </div>
+      </div>
+        <a href="#" class="text-grayishBlue hover:text-red w-full pt-3 border-t border-darkBlue text-center" >Login</a>
+        
+      </div>
+    </div>
+    
+ </nav>
+
+ <!-- hero section -->
+<section>
+  <!-- container for image and content -->
+  <div class="max-w-6xl p-3 container mt-20 mb-20 md:mx-auto flex items-center flex-col-reverse md:p-4  md:flex-row md:space-x-8 md:space-between">
+    <!-- content -->
+    <div class="flex flex-col  mt-20 space-y-6 md:w-1/2 md:mt-0 ">
+      <div class="flex space-x-3 items-center uppercase">
+        <span class="bg-darkBlue text-lightGrayishBlue  p-2 px-4 rounded-full font-bold">
+          new
+        </span>
+        <p class="text-grayishBlue font-barlow tracking-[0.3em]">Monograph Dashboard</p>
+      </div>
+      <h1 class="text-3xl max-w-md font-semibold  md:text-5xl text-left uppercase tracking-[0.02em] text-darkBlue">
+        Powerful insights into your team
+      </h1>
+      <p class="text-darkGrayishBlue text-xl text-left">
+        Project planning and time tracking for agile teams.
+      </p>
+      <!-- buttons -->
+      <div class="flex items-center  space-x-3 justify-start md:flex-row">
+        <button class="btn tracking-[0.05em] text-lightGrayishBlue  bg-red  hover:bg-lightGrayishBlue hover:text-red hover: hover:border-red ">
+          Schedule a demo
+        </button>
+        <button class="btn text-grayishBlue hover:text-red hover:border-red  tracking-[0.2em] ">
+          to see a live preview
+        </button>
+      </div>
+      <footer class="text-red p-5 text-xl">
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="hover:text-darkBlue">Frontend Mentor</a>. 
+          Coded by <a href="#" class="hover:text-darkBlue">SG</a>.
+        </p>
+      </footer>
+    </div>
+    <!-- images -->
+    <div class="mx-auto w-full md:mx-0 md:mb-0 md:mt-0 md:w-1/2 ">
+      <div class="bg-hero z-[-1] "></div>
+      <img
+        src="images/illustration-devices.svg"
+        alt="illustration devices image"
+        class="z-10 md:absolute hero-img"
+      />
+    </div>
+  </div>
+
+</section>  
+  
+</body>
+</html>
