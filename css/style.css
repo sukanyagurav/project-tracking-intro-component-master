@@ -861,6 +861,13 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.btn:hover {
+  --tw-border-opacity: 1;
+  border-color: hsl(0 100% 68% / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(0 100% 68% / var(--tw-text-opacity));
+}
+
 .link-hover {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -938,11 +945,6 @@ video {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
-}
-
-.hover\:border-red:hover {
-  --tw-border-opacity: 1;
-  border-color: hsl(0 100% 68% / var(--tw-border-opacity));
 }
 
 .hover\:bg-lightGrayishBlue:hover {

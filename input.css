@@ -10,10 +10,10 @@
     @apply absolute rounded-bl-lg rounded-br-lg bg-lightGrayishBlue top-0;
   }
 .btn{
-  @apply p-2 font-bold shadow-md rounded-lg uppercase border-2;
+  @apply p-2 font-bold shadow-md rounded-lg uppercase border-2 hover:text-red hover:border-red;
 }
 .link-hover{
-  @apply mx-2 group-hover:border-b group-hover:border-red;
+  @apply mx-2 group-hover:border-b group-hover:border-red ;
 }
 @media screen(md){
   .hero-img{
