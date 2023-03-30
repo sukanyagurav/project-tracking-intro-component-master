@@ -680,6 +680,11 @@ video {
   border-color: hsl(230 29% 20% / var(--tw-border-opacity));
 }
 
+.border-red {
+  --tw-border-opacity: 1;
+  border-color: hsl(0 100% 68% / var(--tw-border-opacity));
+}
+
 .bg-darkBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(230 29% 20% / var(--tw-bg-opacity));
